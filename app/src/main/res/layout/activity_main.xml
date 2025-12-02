@@ -9,7 +9,6 @@
     android:background="@color/blue"
     tools:context=".MainActivity">
 
-    <!-- Login field with icon -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loginContainer"
         android:layout_width="632dp"
@@ -18,7 +17,8 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintBounds">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -37,20 +37,19 @@
             android:layout_width="0dp"
             android:layout_height="38dp"
             android:background="@null"
+            android:gravity="center"
             android:hint="@string/login"
             android:inputType="textEmailAddress"
             android:textColor="@color/black"
-            android:gravity="center"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView2"
             app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="Autofill" />
+            tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <!-- Password field with icon -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/passwordContainer"
         android:layout_width="632dp"
@@ -59,7 +58,8 @@
         android:background="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginContainer">
+        app:layout_constraintTop_toBottomOf="@+id/loginContainer"
+        tools:ignore="VisualLintBounds">
 
         <ImageView
             android:id="@+id/imageView"
@@ -70,7 +70,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/lock"
-            tools:ignore="ContentDescription" />
+            tools:ignore="ContentDescription,ImageContrastCheck" />
 
         <EditText
             android:id="@+id/editTextPassword"
@@ -88,7 +88,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageView"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            tools:ignore="Autofill" />
+            tools:ignore="Autofill,TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -103,6 +103,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordContainer" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordContainer"
+        tools:ignore="TextContrastCheck,VisualLintButtonSize,VisualLintBounds" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,18 @@
 <resources>
+    <!-- Основные строки -->
     <string name="app_name">PR9karta</string>
     <string name="login">Login</string>
     <string name="password">Password</string>
     <string name="sign_in">Sign In</string>
+    <string name="map_title">Карта</string>
+    <string name="button_red">Красная</string>
+    <string name="button_blue">Синяя</string>
+    <string name="button_green">Зеленая</string>
+    <string name="button_gray">Неактивная</string>
+    <string name="button_default">Кнопка</string>
+    <string name="button_1">Кнопка 1</string>
+    <string name="button_2">Кнопка 2</string>
+    <string name="button_3">Кнопка 3</string>
+    <string name="state_active">Активна</string>
+    <string name="state_inactive">Неактивна</string>
 </resources>
